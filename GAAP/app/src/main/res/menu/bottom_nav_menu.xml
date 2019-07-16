@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_person_outline_black_24dp"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/navigation_aboutus"
+        android:icon="@drawable/ic_group_black_24dp"
+        android:title="About us" />
+
+    <item
+        android:id="@+id/navigation_bookameal"
+        android:icon="@drawable/ic_free_breakfast_black_24dp"
+        android:title="Book a Meal" />
+
+    <item
+        android:id="@+id/navigation_donate"
+        android:icon="@drawable/ic_local_atm_black_24dp"
+        android:title="Donate" />
+
+    <item
+        android:id="@+id/navigation_contact"
+        android:icon="@drawable/ic_contact_phone_black_24dp"
+        android:title="Contact us" />
+
+</menu>

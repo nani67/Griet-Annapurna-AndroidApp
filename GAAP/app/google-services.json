@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "707678917110",
+    "firebase_url": "https://gaapfreefood.firebaseio.com",
+    "project_id": "gaapfreefood",
+    "storage_bucket": "gaapfreefood.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707678917110:android:e985e1a22669c128",
+        "android_client_info": {
+          "package_name": "nandroid.in.gaap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "707678917110-fj4ekc6qm86t38oabuo6gj1qctnn0c70.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "nandroid.in.gaap",
+            "certificate_hash": "0f132c1258f1c563359be370efe84449ff6058eb"
+          }
+        },
+        {
+          "client_id": "707678917110-aviboaaikh84m5d9qfn1gc4oiqatsjlp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjcsCmqBgfLe--ddcEsuWSX_RzHXVowfE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "707678917110-aviboaaikh84m5d9qfn1gc4oiqatsjlp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

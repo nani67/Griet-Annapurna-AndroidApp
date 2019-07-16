@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">GRIET AAP</string>
+
+    <string-array name="department_array">
+        <item>CSE</item>
+        <item>IT</item>
+        <item>ECE</item>
+        <item>EEE</item>
+        <item>Mechanical</item>
+        <item>Civil</item>
+        <item>Pharmacy</item>
+    </string-array>
+    <string-array name="typeOfPerson_array">
+        <item>Teaching</item>
+        <item>Non-Teaching</item>
+    </string-array>
+
+    <string-array name="selectedD">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>

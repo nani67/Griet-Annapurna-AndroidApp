@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RegisterFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:elevation="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="12dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_margin="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#000000"
+                    android:id="@+id/registertext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_margin="16dp"
+                    android:text="Create a new Account"
+                    android:textSize="24sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/userName_register"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Your name"
+                    android:padding="8dp"
+                    android:layout_margin="16dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/registertext" />
+
+                <EditText
+                    android:id="@+id/userEmail_reg"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:hint="Your Email ID"
+                    android:layout_margin="16dp"
+                    android:inputType="textEmailAddress"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/userName_register"/>
+
+
+                <EditText
+                    android:id="@+id/userPhNo_reg"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_margin="16dp"
+                    android:hint="Your Mobile Number"
+                    android:inputType="phone"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/userEmail_reg"/>
+
+
+                <Spinner
+                    android:id="@+id/typeOfPerson"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_margin="16dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:entries="@array/typeOfPerson_array"
+                    app:layout_constraintTop_toBottomOf="@id/userPhNo_reg" />
+
+                <Spinner
+                    android:id="@+id/departmentChoose"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_margin="16dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:entries="@array/department_array"
+                    app:layout_constraintTop_toBottomOf="@id/typeOfPerson" />
+
+                <EditText
+                    android:id="@+id/userGrietIDNo_reg"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_margin="16dp"
+                    android:hint="Your GRIET ID No"
+                    android:inputType="text"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/departmentChoose"/>
+
+                <EditText
+                    android:id="@+id/password_register"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Type a password"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:layout_margin="16dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/userGrietIDNo_reg" />
+
+                <Button
+                    android:id="@+id/registerButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/password_register"
+                    android:padding="8dp"
+                    android:text="Register"
+                    android:textAllCaps="false"
+                    android:drawableLeft="@drawable/ic_person_add_black_24dp"
+                    android:drawablePadding="4dp"
+                    android:layout_margin="16dp"/>
+
+                <View
+                    android:id="@+id/emptyView1"
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/registerButton"/>
+
+                <TextView
+                    android:id="@+id/loginOptionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_margin="16dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="Existing user? Login"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/emptyView1"/>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
